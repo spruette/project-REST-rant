@@ -10,9 +10,15 @@ function show (data) {
                 <h2>Rating</h2>
                 <p>Not Rated</p>
             </div>
+            <h3>Located in {data.place.city}, {data.place.state} </h3>
             <div>
                 <h2>Description</h2>
-                <p>Located in Pheonix, Az and serving Coffee Bakery</p>
+                <h3>
+                {data.place.showEstablished() }
+                </h3>
+                <h4>
+                    Serving {data.place.cuisines}
+                </h4>
             </div>
             <div>
                 <h2>Comments</h2>
